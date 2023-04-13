@@ -1,13 +1,21 @@
 body{
+    display: grid;
     font-family: 'RocknRoll One', sans-serif;
-    color: #EDF0DA;
-    background-color: #1A2C37;
+    color: #241023;
+    background-color: #AEADF0;
+    grid-template-rows: 1fr 5fr 1fr;
+    height: 100vh;
     /* color: #3B2D2B; */
 }
 
+header{ 
+    order: 1
+}
+
+
 h1{
     font-family: 'DynaPuff', cursive;
-    background-color: #1A2C37;
+    background-color: #7BBE3C;
 }
 
 section {
@@ -16,7 +24,13 @@ section {
 
 
 footer {
-    position: fixed;
+    /* position: fixed; */
+    text-align: center;
+    /* width: 100vw; */
+    margin-top: 20px;
+    background-color: #7BBE3C;
+    order:3;
+    /* display: flex; */
 }
 
 .search{ 
@@ -32,3 +46,27 @@ h1{
 h2{
     text-align: center;
 }
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+
+.wishlist h3 {
+    text-align: center;
+}
+
+.wishlist {
+    background-color: #D8C99B;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    /* height: 50vh; */
+    /* align-items: end; */
+    order: 2;
+}
+

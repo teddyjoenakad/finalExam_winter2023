@@ -44,7 +44,7 @@ let bookWishList = (event) => {
     li.append(event.target);
     ul.appendChild(li);
     Wishlist.appendChild(ul);
-    console.log(event.target.);
+    console.log(event.target);
 }
 
 section.addEventListener('click', bookWishList)
